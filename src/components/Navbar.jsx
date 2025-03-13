@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi"; // Import ikon hamburger & close
+import { FiMenu, FiX } from "react-icons/fi"; 
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,7 @@ function Navbar() {
     return (
         <nav className="w-full fixed pt-2  bg-transparent">
             <div className="container mx-auto flex justify-end items-center">
-                {/* Desktop Navigation */}
+                {/* Nav Desktop */}
                 <ul className="hidden md:flex space-x-6 text-white font-semibold ">
                      <li className="hover:scale-110 transition duration-300">
                         <Link to="/home" className="hover:text-[#1bf5d4]  transition duration-300 ">
@@ -41,7 +41,7 @@ function Navbar() {
             {/* Mobile Menu */}
             <div className={`md:hidden fixed top-0 right-0 w-full h-2/3 rounded-xl bg-[#0E423D] shadow-lg transition-transform transform ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
                 <div className="relative w-full h-full flex flex-col items-center justify-center">
-                    {/* Header Menu: Teks "Menu" + Tombol X */}
+                    {/* Header Menu Tombol X */}
                     <div className="absolute top-4 w-full flex justify-between px-6">
                         <span className="text-white text-3xl font-semibold">Menu.</span>
                         <button className="text-white text-3xl" onClick={() => setIsOpen(false)}>

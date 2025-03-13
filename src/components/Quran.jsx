@@ -7,15 +7,15 @@ function Quran() {
     const [ayat, setayat] = useState([]);
     const [nomor, setnomor] = useState(1);
     const [isSidebarOpen, setSidebarOpen] = useState(false);
-    const [searchQuery, setSearchQuery] = useState(""); // State untuk pencarian
-    const [filteredSurah, setFilteredSurah] = useState([]); // State untuk hasil pencarian
+    const [searchQuery, setSearchQuery] = useState(""); 
+    const [filteredSurah, setFilteredSurah] = useState([]); 
 
     useEffect(() => {
         fetch("https://equran.id/api/v2/surat")
             .then((response) => response.json())
             .then((data) => {
                 setsurah(data.data);
-                setFilteredSurah(data.data); // Set filteredSurah dengan data awal
+                setFilteredSurah(data.data); 
             });
     }, []);
 
@@ -25,17 +25,14 @@ function Quran() {
             .then((data) => setayat(data.data.ayat));
     }, [nomor]);
 
-    // Fungsi untuk mengonversi angka menjadi angka Arab
     const convertToArabicNumber = (num) => {
         return num.toString().replace(/[0-9]/g, (digit) => "٠١٢٣٤٥٦٧٨٩"[digit]);
     };
 
-    // Fungsi untuk menangani perubahan input pencarian
     const handleSearch = (e) => {
         const query = e.target.value.toLowerCase();
         setSearchQuery(query);
 
-        // Filter surah berdasarkan nama, namaLatin, atau arti
         const filtered = surah.filter(
             (surat) =>
                 surat.nama.toLowerCase().includes(query) ||

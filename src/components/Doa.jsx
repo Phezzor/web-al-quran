@@ -21,7 +21,7 @@ function Doa() {
       </h1>
       
 
-      {/* Grid Container */}
+      {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-7xl">
         {doa.slice(0, 24).map((item, index) => (
           <div
