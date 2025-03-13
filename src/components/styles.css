@@ -1,0 +1,23 @@
+.arabic-number {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 2px solid #1bf5d4;  /* Warna border emas */
+    border-radius: 50%;
+    background: #0E423A;  /* Hijau tua transparan */
+    color: #ffff;  /* Warna emas */
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 8px;
+    box-shadow: 0 0 8px #1bf5d4; /* Efek glow emas */
+}
+
+.sidebar {
+    scrollbar-width: none; /* Untuk Firefox */
+    -ms-overflow-style: none; /* Untuk Internet Explorer & Edge */
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none; /* Untuk Chrome, Safari, Opera */
+}
+
