@@ -4,8 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss(),'tailwind-scrollbar-hide'],
-  base:"/web-al-quran",
+  plugins: [react(),tailwindcss(),'tailwind-scrollbar-hide']
 });
 
 

@@ -11,7 +11,7 @@ function Doa() {
 
   return (
     <div className="w-screen min-h-screen bg-gradient-to-r from-[#0C4340] via-[#0E423A] to-[#0E423A] text-white flex flex-col items-center p-6">
-        <img className="absolute inset-0 w-full h-full opacity-20" src="https://static.vecteezy.com/system/resources/previews/008/557/913/non_2x/ramadhan-pattern-with-dark-blue-gradient-vector.jpg  " alt="" />
+        <img className="absolute inset-0 w-full h-full opacity-20" src="https://static.vecteezy.com/system/resources/previews/008/557/913/non_2x/ramadhan-pattern-with-dark-blue-gradient-vector.jpg" alt="" />
       
         
       {/* Header */}
@@ -37,7 +37,7 @@ function Doa() {
           </div>
         ))}
       </div>
-      <Navbar/>
+      <Navbar />
     </div>
   );
 }

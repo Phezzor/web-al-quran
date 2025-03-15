@@ -11,7 +11,7 @@ function Navbar() {
                 {/* Nav Desktop */}
                 <ul className="hidden md:flex space-x-6 text-white font-semibold ">
                      <li className="hover:scale-110 transition duration-300">
-                        <Link to="/home" className="hover:text-[#1bf5d4]  transition duration-300 ">
+                        <Link to="/Home" className="hover:text-[#1bf5d4]  transition duration-300 ">
                             Home
                         </Link>
                     </li>
